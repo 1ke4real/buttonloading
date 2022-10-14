@@ -22,12 +22,28 @@ body{
     border-radius: 5px;
     box-shadow: 0 10px 40px rgba(0 , 0, 0, 0.1);
     background-color: #7b1fa2;
+    cursor: pointer;
 }
-.icon{
+
+.button .icon{
     font-size: 28px;
     color: #fff;
     margin-right: 10px;
+    
+}
+.button .spiner{
+    animation: spin 1.3s ease-in-out infinite;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.button .hide{
     display: none;
+}
+.button.checked{
+    display: flex;
 }
 .icon.fa-check{
     display: inline-flex;
